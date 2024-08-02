@@ -1,0 +1,12 @@
+Testing API Endpoints
+Daftar Pengguna Baru: Kirimkan permintaan POST ke /api/auth/register dengan data JSON { "username": "user", "password": "pass" }.
+
+Login Pengguna: Kirimkan permintaan POST ke /api/auth/login dengan data JSON { "username": "user", "password": "pass" } dan dapatkan token.
+
+Mendapatkan Semua Buku: Kirimkan permintaan GET ke /api/books.
+
+Menambahkan/Mengubah Ulasan Buku: Kirimkan permintaan POST ke /api/books/:bookId/reviews dengan data JSON { "userId": "userId", "review": "Great book!", "rating": 5 }.
+
+Menghapus Ulasan Buku: Kirimkan permintaan DELETE ke /api/books/:bookId/reviews/:reviewId.
+
+Mencari Buku Berdasarkan ISBN/Author/Title: Kirimkan permintaan GET ke /api/books/search?isbn=isbn, /api/books/search?author=author, atau /api/books/search?title=title.
